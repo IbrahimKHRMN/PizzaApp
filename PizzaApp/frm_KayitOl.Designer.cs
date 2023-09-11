@@ -44,34 +44,36 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.cmb_Cinsiyet = new System.Windows.Forms.ComboBox();
+            this.txt_Telefon = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txt_Ad
             // 
             this.txt_Ad.Location = new System.Drawing.Point(124, 32);
             this.txt_Ad.Name = "txt_Ad";
-            this.txt_Ad.Size = new System.Drawing.Size(100, 20);
+            this.txt_Ad.Size = new System.Drawing.Size(121, 20);
             this.txt_Ad.TabIndex = 0;
             // 
             // txt_Soyad
             // 
             this.txt_Soyad.Location = new System.Drawing.Point(124, 71);
             this.txt_Soyad.Name = "txt_Soyad";
-            this.txt_Soyad.Size = new System.Drawing.Size(100, 20);
+            this.txt_Soyad.Size = new System.Drawing.Size(121, 20);
             this.txt_Soyad.TabIndex = 1;
             // 
             // txt_Email
             // 
             this.txt_Email.Location = new System.Drawing.Point(124, 114);
             this.txt_Email.Name = "txt_Email";
-            this.txt_Email.Size = new System.Drawing.Size(151, 20);
+            this.txt_Email.Size = new System.Drawing.Size(142, 20);
             this.txt_Email.TabIndex = 2;
             // 
             // txt_Parola
             // 
             this.txt_Parola.Location = new System.Drawing.Point(124, 154);
             this.txt_Parola.Name = "txt_Parola";
-            this.txt_Parola.Size = new System.Drawing.Size(100, 20);
+            this.txt_Parola.Size = new System.Drawing.Size(121, 20);
             this.txt_Parola.TabIndex = 3;
             // 
             // label1
@@ -116,7 +118,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label4.Location = new System.Drawing.Point(51, 157);
+            this.label4.Location = new System.Drawing.Point(50, 155);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 16);
             this.label4.TabIndex = 9;
@@ -127,7 +129,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label5.Location = new System.Drawing.Point(121, 200);
+            this.label5.Location = new System.Drawing.Point(121, 234);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(58, 13);
             this.label5.TabIndex = 10;
@@ -191,11 +193,30 @@
             this.cmb_Cinsiyet.Items.AddRange(new object[] {
             "Erkek",
             "Kadın"});
-            this.cmb_Cinsiyet.Location = new System.Drawing.Point(124, 216);
+            this.cmb_Cinsiyet.Location = new System.Drawing.Point(124, 250);
             this.cmb_Cinsiyet.Name = "cmb_Cinsiyet";
             this.cmb_Cinsiyet.Size = new System.Drawing.Size(121, 21);
             this.cmb_Cinsiyet.TabIndex = 16;
             this.cmb_Cinsiyet.Text = "Cinsiyetinizi Seçiniz";
+            // 
+            // txt_Telefon
+            // 
+            this.txt_Telefon.Location = new System.Drawing.Point(124, 197);
+            this.txt_Telefon.Name = "txt_Telefon";
+            this.txt_Telefon.Size = new System.Drawing.Size(121, 20);
+            this.txt_Telefon.TabIndex = 17;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label8.Location = new System.Drawing.Point(51, 198);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(60, 16);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Telefon";
             // 
             // frm_KayitOl
             // 
@@ -203,6 +224,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(526, 349);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txt_Telefon);
             this.Controls.Add(this.cmb_Cinsiyet);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -218,7 +241,6 @@
             this.Controls.Add(this.txt_Email);
             this.Controls.Add(this.txt_Soyad);
             this.Controls.Add(this.txt_Ad);
-            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Name = "frm_KayitOl";
             this.Text = "frm_KayitOl";
             this.ResumeLayout(false);
@@ -243,5 +265,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cmb_Cinsiyet;
+        private System.Windows.Forms.TextBox txt_Telefon;
+        private System.Windows.Forms.Label label8;
     }
 }

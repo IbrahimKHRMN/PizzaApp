@@ -75,7 +75,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ORM\Context\ProjectContext.cs" />
-    <Compile Include="ORM\Entity\KullaniciTips.cs" />
+    <Compile Include="ORM\Entity\BaseEntity.cs" />
     <Compile Include="ORM\Entity\Kullanicilar.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

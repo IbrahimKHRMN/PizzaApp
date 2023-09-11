@@ -23,6 +23,7 @@ namespace PizzaApp
         private void btn_KayitOl_Click(object sender, EventArgs e)
         {
             List<Kullanicilar> mst = new List<Kullanicilar>();
+            mst = db.Kullanicilars.ToList();
             bool emailvar =false;
             cmb_Cinsiyet.Items.Add("Ankara");
             foreach (var email in mst)
@@ -32,7 +33,7 @@ namespace PizzaApp
                     emailvar = true;
                 }
             }
-            if (emailvar)
+            if (emailvar==true)
             {
                 MessageBox.Show("E-mail zaten sistemde kayıtlı. Lütfen başka bir E-mail ile deneyiniz.");
             }

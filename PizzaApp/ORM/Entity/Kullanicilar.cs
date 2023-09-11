@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace PizzaApp.ORM.Entity
 {
-    internal class Kullanicilar
+    internal class Kullanicilar : BaseEntity
     {
-        public int ID { get; set; }
         public string Email { get; set; }
         public string Parola { get; set; }
         public string Ad { get; set; }
@@ -16,6 +15,6 @@ namespace PizzaApp.ORM.Entity
         public string Cinsiyet { get; set; }
         public int KullaniciTipiId { get; set; }
 
-        List<KullaniciTips> KullanıcıTipis = new List<KullaniciTips>();
+        
     }
 }

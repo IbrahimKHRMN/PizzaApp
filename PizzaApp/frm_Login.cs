@@ -18,9 +18,12 @@ namespace PizzaApp
         string email = "";
         string parola = "";
         int id;
+        frm_KayitOl frm_KayitOl = new frm_KayitOl();
+        int kullaniciTipi;
         public frm_Login()
         {
             InitializeComponent();
+
         }
 
         private void linklbl_uyeol_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -33,7 +36,43 @@ namespace PizzaApp
         private void btn_giris_Click(object sender, EventArgs e)
         {
             List<Kullanicilar> mst = new List<Kullanicilar>();
-            
+            mst = db.Kullanicilars.Where(x => x.Email == txt_eposta.Text).ToList();
+            mst = db.Kullanicilars.Where(x=>x.KullaniciTipiId == kullaniciTipi).ToList();
+
+            foreach (Kullanicilar kullanici in mst)
+            {
+                email = kullanici.Email.ToString();
+                parola =kullanici.Parola.ToString();
+                id = kullanici.ID;
+                kullaniciTipi = kullanici.KullaniciTipiId;                
+                
+
+            }
+            if (email == txt_eposta.Text & kullaniciTipi == 1)
+            {
+                if (parola==txt_parola.Text)
+                {
+                    this.Hide();
+                    //Kullanıcı tipi id 1 e eşit ise müşteri paneli açılacak. Form hazırlanınca yönlendirme yapılacak.
+                    MessageBox.Show("Giriş Başarılı Müşteri Paneline Yönlendiriliyorsunuz.");
+                }
+                else
+                {
+                    MessageBox.Show("Şifreniz yanlış.");
+                }
+
+            }
+            else if (email == txt_eposta.Text & kullaniciTipi == 2)
+            {
+                this.Hide();
+                //Kullanıcı tipi id 2 ye eşit ise admin paneli açılacak. Form hazırlanınca yönlendirme yapılacak.
+                MessageBox.Show("Giriş Başarılı Admin Paneline Yönlendiriliyorsunuz.");
+
+            }
+            else
+            {
+                MessageBox.Show("E-mail sistemde mevcut değil.");
+            }
         }
     }
 }
