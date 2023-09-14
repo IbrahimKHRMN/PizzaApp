@@ -49,6 +49,10 @@ namespace PizzaApp
             db.SaveChanges();
             MessageBox.Show("Pizza Başarıyla Eklendi");
 
+            Urunler urunler = new Urunler();
+            this.Hide();
+            urunler.Show();
+
 
 
         }

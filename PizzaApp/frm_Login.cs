@@ -55,7 +55,7 @@ namespace PizzaApp
                 
 
             }
-            if (email == txt_eposta.Text /*& kullaniciTipi == 1*/)
+            /*if (email == txt_eposta.Text & kullaniciTipi == 1)
             {
                 if (parola==txt_parola.Text)
                 {
@@ -64,20 +64,24 @@ namespace PizzaApp
                     MessageBox.Show("Giriş Başarılı Müşteri Paneline Yönlendiriliyorsunuz.");
                     MusteriPaneli musteriPaneli = new MusteriPaneli();
                     musteriPaneli.Show();
+                    AdminPaneli adminPaneli = new AdminPaneli();
+                    adminPaneli.Show();
                 }
                 else
                 {
                     MessageBox.Show("Şifreniz yanlış.");
                 }
 
-            }
-            else if (email == txt_eposta.Text /*& kullaniciTipi == 2*/)
+            }*/
+            /*else*/ if (email == txt_eposta.Text /*& kullaniciTipi == 2*/)
             {
                 if (parola==txt_parola.Text)
                 {
                     this.Hide();
                     //Kullanıcı tipi id 2 ye eşit ise admin paneli açılacak. Form hazırlanınca yönlendirme yapılacak.
                     MessageBox.Show("Giriş Başarılı Admin Paneline Yönlendiriliyorsunuz.");
+                    AdminPaneli adminPaneli = new AdminPaneli();
+                    adminPaneli.Show();
                 }
                 else
                 {

@@ -253,9 +253,9 @@
             this.Controls.Add(this.txt_Email);
             this.Controls.Add(this.txt_Soyad);
             this.Controls.Add(this.txt_Ad);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "frm_KayitOl";
-            this.Text = "frm_KayitOl";
+            this.Text = "Kayıt Ol";
             this.ResumeLayout(false);
             this.PerformLayout();
 
