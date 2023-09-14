@@ -107,6 +107,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_eposta);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frm_Login";
             this.ShowIcon = false;
             this.Text = "Login";

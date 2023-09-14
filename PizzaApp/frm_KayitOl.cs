@@ -59,5 +59,13 @@ namespace PizzaApp
 
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frm_Login frm_Login = new frm_Login();
+            frm_Login.Show();
+
+        }
     }
 }

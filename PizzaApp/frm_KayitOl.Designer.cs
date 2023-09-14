@@ -46,6 +46,7 @@
             this.cmb_Cinsiyet = new System.Windows.Forms.ComboBox();
             this.txt_Telefon = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.btn_GeriDon = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txt_Ad
@@ -218,12 +219,23 @@
             this.label8.TabIndex = 18;
             this.label8.Text = "Telefon";
             // 
+            // btn_GeriDon
+            // 
+            this.btn_GeriDon.Location = new System.Drawing.Point(347, 250);
+            this.btn_GeriDon.Name = "btn_GeriDon";
+            this.btn_GeriDon.Size = new System.Drawing.Size(75, 23);
+            this.btn_GeriDon.TabIndex = 19;
+            this.btn_GeriDon.Text = "Geri Dön";
+            this.btn_GeriDon.UseVisualStyleBackColor = true;
+            this.btn_GeriDon.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frm_KayitOl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(526, 349);
+            this.Controls.Add(this.btn_GeriDon);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txt_Telefon);
             this.Controls.Add(this.cmb_Cinsiyet);
@@ -241,6 +253,7 @@
             this.Controls.Add(this.txt_Email);
             this.Controls.Add(this.txt_Soyad);
             this.Controls.Add(this.txt_Ad);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frm_KayitOl";
             this.Text = "frm_KayitOl";
             this.ResumeLayout(false);
@@ -267,5 +280,6 @@
         private System.Windows.Forms.ComboBox cmb_Cinsiyet;
         private System.Windows.Forms.TextBox txt_Telefon;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btn_GeriDon;
     }
 }

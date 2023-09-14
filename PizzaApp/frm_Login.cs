@@ -19,7 +19,8 @@ namespace PizzaApp
         string parola = "";
         int id;
         frm_KayitOl frm_KayitOl = new frm_KayitOl();
-        int kullaniciTipi;
+        int kullaniciTipi = 1;
+        
         public frm_Login()
         {
             InitializeComponent();
@@ -38,23 +39,31 @@ namespace PizzaApp
             List<Kullanicilar> mst = new List<Kullanicilar>();
             mst = db.Kullanicilars.Where(x => x.Email == txt_eposta.Text).ToList();
             mst = db.Kullanicilars.Where(x=>x.KullaniciTipiId == kullaniciTipi).ToList();
+            
 
             foreach (Kullanicilar kullanici in mst)
             {
                 email = kullanici.Email.ToString();
                 parola =kullanici.Parola.ToString();
                 id = kullanici.ID;
-                kullaniciTipi = kullanici.KullaniciTipiId;                
+                foreach (Kullanicilar item in mst)
+                {
+                    int a = item.KullaniciTipiId;
+                    kullaniciTipi = a;
+                }
+                                
                 
 
             }
-            if (email == txt_eposta.Text & kullaniciTipi == 1)
+            if (email == txt_eposta.Text /*& kullaniciTipi == 1*/)
             {
                 if (parola==txt_parola.Text)
                 {
                     this.Hide();
                     //Kullanıcı tipi id 1 e eşit ise müşteri paneli açılacak. Form hazırlanınca yönlendirme yapılacak.
                     MessageBox.Show("Giriş Başarılı Müşteri Paneline Yönlendiriliyorsunuz.");
+                    MusteriPaneli musteriPaneli = new MusteriPaneli();
+                    musteriPaneli.Show();
                 }
                 else
                 {
@@ -62,11 +71,19 @@ namespace PizzaApp
                 }
 
             }
-            else if (email == txt_eposta.Text & kullaniciTipi == 2)
+            else if (email == txt_eposta.Text /*& kullaniciTipi == 2*/)
             {
-                this.Hide();
-                //Kullanıcı tipi id 2 ye eşit ise admin paneli açılacak. Form hazırlanınca yönlendirme yapılacak.
-                MessageBox.Show("Giriş Başarılı Admin Paneline Yönlendiriliyorsunuz.");
+                if (parola==txt_parola.Text)
+                {
+                    this.Hide();
+                    //Kullanıcı tipi id 2 ye eşit ise admin paneli açılacak. Form hazırlanınca yönlendirme yapılacak.
+                    MessageBox.Show("Giriş Başarılı Admin Paneline Yönlendiriliyorsunuz.");
+                }
+                else
+                {
+                    MessageBox.Show("Şifreniz yanlış.");
+
+                }
 
             }
             else

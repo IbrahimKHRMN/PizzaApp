@@ -74,9 +74,23 @@
       <DependentUpon>202309111652489_b.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="MusteriPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriPaneli.Designer.cs">
+      <DependentUpon>MusteriPaneli.cs</DependentUpon>
+    </Compile>
     <Compile Include="ORM\Context\ProjectContext.cs" />
     <Compile Include="ORM\Entity\BaseEntity.cs" />
     <Compile Include="ORM\Entity\Kullanicilar.cs" />
+    <Compile Include="ORM\Entity\Malzeme.cs" />
+    <Compile Include="ORM\Entity\Pizzalar.cs" />
+    <Compile Include="PizzaEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PizzaEkle.Designer.cs">
+      <DependentUpon>PizzaEkle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frm_KayitOl.resx">
@@ -87,6 +101,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202309111652489_b.resx">
       <DependentUpon>202309111652489_b.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriPaneli.resx">
+      <DependentUpon>MusteriPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PizzaEkle.resx">
+      <DependentUpon>PizzaEkle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
