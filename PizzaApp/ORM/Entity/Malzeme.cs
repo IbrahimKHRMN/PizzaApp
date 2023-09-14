@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PizzaApp.ORM.Entity
 {
-    internal class Malzeme : BaseEntity
+    public class Malzeme : BaseEntity
     {
         [Required]
         public string MalzemeAdi { get; set; }

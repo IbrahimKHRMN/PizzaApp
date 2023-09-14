@@ -73,6 +73,14 @@
     <Compile Include="Migrations\202309111652489_b.designer.cs">
       <DependentUpon>202309111652489_b.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202309141941423_a.cs" />
+    <Compile Include="Migrations\202309141941423_a.designer.cs">
+      <DependentUpon>202309141941423_a.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202309141942510_a1.cs" />
+    <Compile Include="Migrations\202309141942510_a1.designer.cs">
+      <DependentUpon>202309141942510_a1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MusteriPaneli.cs">
       <SubType>Form</SubType>
@@ -101,6 +109,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202309111652489_b.resx">
       <DependentUpon>202309111652489_b.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202309141941423_a.resx">
+      <DependentUpon>202309141941423_a.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202309141942510_a1.resx">
+      <DependentUpon>202309141942510_a1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MusteriPaneli.resx">
       <DependentUpon>MusteriPaneli.cs</DependentUpon>

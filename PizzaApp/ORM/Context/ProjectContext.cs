@@ -16,6 +16,8 @@ namespace PizzaApp.ORM.Context
             Database.Connection.ConnectionString = "Server=DESKTOP-H7CAIKT;Database=PizzaApp;uid=ASA;pwd=1071";
         }
         public DbSet<Kullanicilar> Kullanicilars { get; set; }
+        public DbSet<Pizzalar> pizzalars { get; set; }
+        public DbSet<Malzeme> malzemes { get; set; }
         //public DbSet<KullaniciTips> KullaniciTipis { get; set; }
 
         // Migration (Göç - Transfer)

@@ -106,6 +106,7 @@
             this.btn_ResimEkle.TabIndex = 7;
             this.btn_ResimEkle.Text = "Dosya Seç";
             this.btn_ResimEkle.UseVisualStyleBackColor = true;
+            this.btn_ResimEkle.Click += new System.EventHandler(this.btn_ResimEkle_Click);
             // 
             // txt_ImageUrl
             // 
@@ -123,6 +124,7 @@
             this.btn_PizzaKaydet.TabIndex = 9;
             this.btn_PizzaKaydet.Text = "Pizzayı Kaydet";
             this.btn_PizzaKaydet.UseVisualStyleBackColor = false;
+            this.btn_PizzaKaydet.Click += new System.EventHandler(this.btn_PizzaKaydet_Click);
             // 
             // pictureBox1
             // 

@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace PizzaApp.ORM.Entity
 {
-    internal class Pizzalar : BaseEntity
+    public class Pizzalar : BaseEntity
     {
         [Required]
         public string PizzaAdi { get; set; }
         [Required]
-        public int PizzaFiyati { get; set; }
+        public double PizzaFiyati { get; set; }
         [Required]
         public string Icindekiler { get; set; }
         [Required]
