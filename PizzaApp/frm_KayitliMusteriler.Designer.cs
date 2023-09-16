@@ -1,6 +1,6 @@
 ﻿namespace PizzaApp
 {
-    partial class KayitliMusteriler
+    partial class frm_KayitliMusteriler
     {
         /// <summary>
         /// Required designer variable.

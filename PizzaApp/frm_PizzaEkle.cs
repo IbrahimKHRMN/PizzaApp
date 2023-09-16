@@ -14,11 +14,11 @@ using System.Windows.Forms.VisualStyles;
 
 namespace PizzaApp
 {
-    public partial class PizzaEkle : Form
+    public partial class frm_PizzaEkle : Form
     {
         ProjectContext db = new ProjectContext();
         string base64 = "";
-        public PizzaEkle()
+        public frm_PizzaEkle()
         {
             InitializeComponent();
         }
@@ -43,13 +43,13 @@ namespace PizzaApp
                 PizzaAdi = txt_PizzaAdi.Text,
                 PizzaFiyati=Convert.ToDouble(txt_PizzaFiyati.Text),
                 ImageUrl = base64,
-                Icindekiler=cList_Icindekiler.Text,
+                Icindekiler=txt_Icindekiler.Text,
             };
             db.pizzalars.Add(pizzalar);
             db.SaveChanges();
             MessageBox.Show("Pizza Başarıyla Eklendi");
 
-            Urunler urunler = new Urunler();
+            frm_Urunler urunler = new frm_Urunler();
             this.Hide();
             urunler.Show();
 

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PizzaApp
 {
-    public partial class Urunler : Form
+    public partial class frm_Urunler : Form
     {
-        public Urunler()
+        public frm_Urunler()
         {
             InitializeComponent();
         }
@@ -26,14 +26,14 @@ namespace PizzaApp
 
         private void btn_UrunEkle_Click(object sender, EventArgs e)
         {
-            PizzaEkle pizzaEkle = new PizzaEkle();
+            frm_PizzaEkle pizzaEkle = new frm_PizzaEkle();
             this.Hide();
             pizzaEkle.Show();
         }
 
         private void btn_AdminPanelineDon_Click(object sender, EventArgs e)
         {
-            AdminPaneli adminPaneli = new AdminPaneli();
+            frm_AdminPaneli adminPaneli = new frm_AdminPaneli();
             this.Hide();
             adminPaneli.Show();
         }

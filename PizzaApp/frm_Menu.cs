@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace PizzaApp
 {
-    public partial class MusteriPaneli : Form
+    public partial class frm_Menu : Form
     {
-        public MusteriPaneli()
+        public frm_Menu()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void frm_Menu_Load(object sender, EventArgs e)
         {
 
         }

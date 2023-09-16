@@ -1,6 +1,6 @@
 ﻿namespace PizzaApp
 {
-    partial class Urunler
+    partial class frm_Urunler
     {
         /// <summary>
         /// Required designer variable.

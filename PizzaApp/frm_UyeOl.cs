@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace PizzaApp
 {
-    public partial class frm_KayitOl : Form
+    public partial class frm_UyeOl : Form
     {
         ProjectContext db = new ProjectContext();
-        public frm_KayitOl()
+        public frm_UyeOl()
         {
             InitializeComponent();
         }
@@ -54,7 +54,7 @@ namespace PizzaApp
                 db.SaveChanges();
                 MessageBox.Show("Kaydınız başarıyla oluşturuldu.");
                 this.Hide();
-                frm_Login frm_Login = new frm_Login();
+                frm_Giris frm_Login = new frm_Giris();
                 frm_Login.Show();
 
             }
@@ -63,7 +63,7 @@ namespace PizzaApp
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frm_Login frm_Login = new frm_Login();
+            frm_Giris frm_Login = new frm_Giris();
             frm_Login.Show();
 
         }

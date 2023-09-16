@@ -1,6 +1,6 @@
 ﻿namespace PizzaApp
 {
-    partial class PizzaEkle
+    partial class frm_PizzaEkle
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PizzaEkle));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_PizzaEkle));
             this.label1 = new System.Windows.Forms.Label();
             this.txt_PizzaAdi = new System.Windows.Forms.TextBox();
-            this.cList_Icindekiler = new System.Windows.Forms.CheckedListBox();
             this.txt_PizzaFiyati = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_ResimEkle = new System.Windows.Forms.Button();
@@ -39,6 +38,7 @@
             this.btn_PizzaKaydet = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.txt_Icindekiler = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,24 +60,6 @@
             this.txt_PizzaAdi.Name = "txt_PizzaAdi";
             this.txt_PizzaAdi.Size = new System.Drawing.Size(119, 20);
             this.txt_PizzaAdi.TabIndex = 1;
-            // 
-            // cList_Icindekiler
-            // 
-            this.cList_Icindekiler.BackColor = System.Drawing.Color.LightGray;
-            this.cList_Icindekiler.FormattingEnabled = true;
-            this.cList_Icindekiler.Items.AddRange(new object[] {
-            "Sucuk",
-            "Kaşar",
-            "Domates",
-            "Mantar",
-            "Yeşil Biber",
-            "Kırmızı Biber",
-            "Zeytin",
-            "Mısır"});
-            this.cList_Icindekiler.Location = new System.Drawing.Point(254, 136);
-            this.cList_Icindekiler.Name = "cList_Icindekiler";
-            this.cList_Icindekiler.Size = new System.Drawing.Size(138, 124);
-            this.cList_Icindekiler.TabIndex = 2;
             // 
             // txt_PizzaFiyati
             // 
@@ -146,13 +128,22 @@
             this.label3.TabIndex = 11;
             this.label3.Text = "İçindekiler";
             // 
-            // PizzaEkle
+            // txt_Icindekiler
+            // 
+            this.txt_Icindekiler.Location = new System.Drawing.Point(254, 126);
+            this.txt_Icindekiler.Multiline = true;
+            this.txt_Icindekiler.Name = "txt_Icindekiler";
+            this.txt_Icindekiler.Size = new System.Drawing.Size(138, 151);
+            this.txt_Icindekiler.TabIndex = 12;
+            // 
+            // frm_PizzaEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(451, 423);
+            this.Controls.Add(this.txt_Icindekiler);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_PizzaKaydet);
@@ -160,10 +151,9 @@
             this.Controls.Add(this.btn_ResimEkle);
             this.Controls.Add(this.txt_PizzaFiyati);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.cList_Icindekiler);
             this.Controls.Add(this.txt_PizzaAdi);
             this.Controls.Add(this.label1);
-            this.Name = "PizzaEkle";
+            this.Name = "frm_PizzaEkle";
             this.Text = "PizzaEkle";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -175,7 +165,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_PizzaAdi;
-        private System.Windows.Forms.CheckedListBox cList_Icindekiler;
         private System.Windows.Forms.TextBox txt_PizzaFiyati;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_ResimEkle;
@@ -183,5 +172,6 @@
         private System.Windows.Forms.Button btn_PizzaKaydet;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txt_Icindekiler;
     }
 }

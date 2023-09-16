@@ -1,6 +1,6 @@
 ﻿namespace PizzaApp
 {
-    partial class frm_KayitOl
+    partial class frm_UyeOl
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_KayitOl));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_UyeOl));
             this.txt_Ad = new System.Windows.Forms.TextBox();
             this.txt_Soyad = new System.Windows.Forms.TextBox();
             this.txt_Email = new System.Windows.Forms.TextBox();

@@ -12,16 +12,16 @@ using System.Windows.Forms;
 
 namespace PizzaApp
 {
-    public partial class frm_Login : Form
+    public partial class frm_Giris : Form
     {
         ProjectContext db = new ProjectContext();
         string email = "";
         string parola = "";
         int id;
-        frm_KayitOl frm_KayitOl = new frm_KayitOl();
-        int kullaniciTipi = 1;
+        frm_UyeOl frm_KayitOl = new frm_UyeOl();
+        int kullaniciTipi;
         
-        public frm_Login()
+        public frm_Giris()
         {
             InitializeComponent();
 
@@ -30,7 +30,7 @@ namespace PizzaApp
         private void linklbl_uyeol_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            frm_KayitOl frm_KayitOl = new frm_KayitOl();
+            frm_UyeOl frm_KayitOl = new frm_UyeOl();
             frm_KayitOl.Show();
         }
 
@@ -38,7 +38,7 @@ namespace PizzaApp
         {
             List<Kullanicilar> mst = new List<Kullanicilar>();
             mst = db.Kullanicilars.Where(x => x.Email == txt_eposta.Text).ToList();
-            mst = db.Kullanicilars.Where(x=>x.KullaniciTipiId == kullaniciTipi).ToList();
+            //mst = db.Kullanicilars.Where(x=>x.KullaniciTipiId == kullaniciTipi).ToList();
             
 
             foreach (Kullanicilar kullanici in mst)
@@ -46,41 +46,33 @@ namespace PizzaApp
                 email = kullanici.Email.ToString();
                 parola =kullanici.Parola.ToString();
                 id = kullanici.ID;
-                foreach (Kullanicilar item in mst)
-                {
-                    int a = item.KullaniciTipiId;
-                    kullaniciTipi = a;
-                }
-                                
-                
-
+                kullaniciTipi = kullanici.KullaniciTipiId;
             }
-            /*if (email == txt_eposta.Text & kullaniciTipi == 1)
+
+            if (email == txt_eposta.Text & kullaniciTipi == 1)
             {
                 if (parola==txt_parola.Text)
                 {
                     this.Hide();
                     //Kullanıcı tipi id 1 e eşit ise müşteri paneli açılacak. Form hazırlanınca yönlendirme yapılacak.
                     MessageBox.Show("Giriş Başarılı Müşteri Paneline Yönlendiriliyorsunuz.");
-                    MusteriPaneli musteriPaneli = new MusteriPaneli();
+                    frm_MusteriPaneli musteriPaneli = new frm_MusteriPaneli();
                     musteriPaneli.Show();
-                    AdminPaneli adminPaneli = new AdminPaneli();
-                    adminPaneli.Show();
                 }
                 else
                 {
                     MessageBox.Show("Şifreniz yanlış.");
                 }
 
-            }*/
-            /*else*/ if (email == txt_eposta.Text /*& kullaniciTipi == 2*/)
+            }
+            else if (email == txt_eposta.Text & kullaniciTipi == 2)
             {
                 if (parola==txt_parola.Text)
                 {
                     this.Hide();
                     //Kullanıcı tipi id 2 ye eşit ise admin paneli açılacak. Form hazırlanınca yönlendirme yapılacak.
                     MessageBox.Show("Giriş Başarılı Admin Paneline Yönlendiriliyorsunuz.");
-                    AdminPaneli adminPaneli = new AdminPaneli();
+                    frm_AdminPaneli adminPaneli = new frm_AdminPaneli();
                     adminPaneli.Show();
                 }
                 else

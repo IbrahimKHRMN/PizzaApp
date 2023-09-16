@@ -1,6 +1,6 @@
 ﻿namespace PizzaApp
 {
-    partial class AdminPaneli
+    partial class frm_AdminPaneli
     {
         /// <summary>
         /// Required designer variable.

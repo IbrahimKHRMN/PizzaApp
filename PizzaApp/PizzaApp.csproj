@@ -57,29 +57,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminPaneli.cs">
+    <Compile Include="frm_AdminPaneli.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminPaneli.Designer.cs">
-      <DependentUpon>AdminPaneli.cs</DependentUpon>
+    <Compile Include="frm_AdminPaneli.Designer.cs">
+      <DependentUpon>frm_AdminPaneli.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_KayitOl.cs">
+    <Compile Include="frm_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_KayitOl.Designer.cs">
-      <DependentUpon>frm_KayitOl.cs</DependentUpon>
+    <Compile Include="frm_Menu.Designer.cs">
+      <DependentUpon>frm_Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Login.cs">
+    <Compile Include="frm_UyeOl.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Login.Designer.cs">
-      <DependentUpon>frm_Login.cs</DependentUpon>
+    <Compile Include="frm_UyeOl.Designer.cs">
+      <DependentUpon>frm_UyeOl.cs</DependentUpon>
     </Compile>
-    <Compile Include="KayitliMusteriler.cs">
+    <Compile Include="frm_Giris.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KayitliMusteriler.Designer.cs">
-      <DependentUpon>KayitliMusteriler.cs</DependentUpon>
+    <Compile Include="frm_Giris.Designer.cs">
+      <DependentUpon>frm_Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_KayitliMusteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_KayitliMusteriler.Designer.cs">
+      <DependentUpon>frm_KayitliMusteriler.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202309111652489_b.cs" />
     <Compile Include="Migrations\202309111652489_b.designer.cs">
@@ -94,11 +100,11 @@
       <DependentUpon>202309141942510_a1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="MusteriPaneli.cs">
+    <Compile Include="frm_MusteriPaneli.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MusteriPaneli.Designer.cs">
-      <DependentUpon>MusteriPaneli.cs</DependentUpon>
+    <Compile Include="frm_MusteriPaneli.Designer.cs">
+      <DependentUpon>frm_MusteriPaneli.cs</DependentUpon>
     </Compile>
     <Compile Include="ORM\Context\ProjectContext.cs" />
     <Compile Include="ORM\Entity\BaseEntity.cs" />
@@ -115,31 +121,34 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PizzaAppDataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="PizzaEkle.cs">
+    <Compile Include="frm_PizzaEkle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PizzaEkle.Designer.cs">
-      <DependentUpon>PizzaEkle.cs</DependentUpon>
+    <Compile Include="frm_PizzaEkle.Designer.cs">
+      <DependentUpon>frm_PizzaEkle.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Urunler.cs">
+    <Compile Include="frm_Urunler.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Urunler.Designer.cs">
-      <DependentUpon>Urunler.cs</DependentUpon>
+    <Compile Include="frm_Urunler.Designer.cs">
+      <DependentUpon>frm_Urunler.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AdminPaneli.resx">
-      <DependentUpon>AdminPaneli.cs</DependentUpon>
+    <EmbeddedResource Include="frm_AdminPaneli.resx">
+      <DependentUpon>frm_AdminPaneli.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_KayitOl.resx">
-      <DependentUpon>frm_KayitOl.cs</DependentUpon>
+    <EmbeddedResource Include="frm_Menu.resx">
+      <DependentUpon>frm_Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Login.resx">
-      <DependentUpon>frm_Login.cs</DependentUpon>
+    <EmbeddedResource Include="frm_UyeOl.resx">
+      <DependentUpon>frm_UyeOl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KayitliMusteriler.resx">
-      <DependentUpon>KayitliMusteriler.cs</DependentUpon>
+    <EmbeddedResource Include="frm_Giris.resx">
+      <DependentUpon>frm_Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_KayitliMusteriler.resx">
+      <DependentUpon>frm_KayitliMusteriler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202309111652489_b.resx">
       <DependentUpon>202309111652489_b.cs</DependentUpon>
@@ -150,11 +159,11 @@
     <EmbeddedResource Include="Migrations\202309141942510_a1.resx">
       <DependentUpon>202309141942510_a1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MusteriPaneli.resx">
-      <DependentUpon>MusteriPaneli.cs</DependentUpon>
+    <EmbeddedResource Include="frm_MusteriPaneli.resx">
+      <DependentUpon>frm_MusteriPaneli.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PizzaEkle.resx">
-      <DependentUpon>PizzaEkle.cs</DependentUpon>
+    <EmbeddedResource Include="frm_PizzaEkle.resx">
+      <DependentUpon>frm_PizzaEkle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -165,8 +174,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Urunler.resx">
-      <DependentUpon>Urunler.cs</DependentUpon>
+    <EmbeddedResource Include="frm_Urunler.resx">
+      <DependentUpon>frm_Urunler.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="PizzaAppDataSet.xsc">

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PizzaApp
 {
-    public partial class KayitliMusteriler : Form
+    public partial class frm_KayitliMusteriler : Form
     {
-        public KayitliMusteriler()
+        public frm_KayitliMusteriler()
         {
             InitializeComponent();
         }
@@ -26,7 +26,7 @@ namespace PizzaApp
 
         private void btn_AdminPanelineDon_Click(object sender, EventArgs e)
         {
-            AdminPaneli adminPaneli = new AdminPaneli();
+            frm_AdminPaneli adminPaneli = new frm_AdminPaneli();
             this.Hide();
             adminPaneli.Show();
         }

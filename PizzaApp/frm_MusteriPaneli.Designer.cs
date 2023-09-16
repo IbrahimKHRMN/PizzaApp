@@ -1,6 +1,6 @@
 ﻿namespace PizzaApp
 {
-    partial class MusteriPaneli
+    partial class frm_MusteriPaneli
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MusteriPaneli));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_MusteriPaneli));
             this.btn_Menu = new System.Windows.Forms.Button();
             this.btn_siparisler = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();

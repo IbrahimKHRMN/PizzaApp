@@ -10,23 +10,23 @@ using System.Windows.Forms;
 
 namespace PizzaApp
 {
-    public partial class AdminPaneli : Form
+    public partial class frm_AdminPaneli : Form
     {
-        public AdminPaneli()
+        public frm_AdminPaneli()
         {
             InitializeComponent();
         }
 
         private void btn_KayitliMusteriler_Click(object sender, EventArgs e)
         {
-            KayitliMusteriler kayitliMusteriler = new KayitliMusteriler();
+            frm_KayitliMusteriler kayitliMusteriler = new frm_KayitliMusteriler();
             this.Hide();
             kayitliMusteriler.Show();
         }
 
         private void btn_Urunler_Click(object sender, EventArgs e)
         {
-            Urunler urunler = new Urunler();
+            frm_Urunler urunler = new frm_Urunler();
             this.Hide();
             urunler.Show();
         }
